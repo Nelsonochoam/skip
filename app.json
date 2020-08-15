@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "skip",
-    "slug": "skip",
+    "name": "skip-nelson-ochoa",
+    "slug": "skip-nelson-ochoa",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,6 +21,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/Nelsonochoam/skip"
   }
 }

@@ -50,7 +50,7 @@ export const Restaurant: React.FC<IProps> = ({ restaurant }) => {
     return (
         <Card>
             <Heading />
-            <Logo source={{ uri: "http://d30v2pzvrfyzpo.cloudfront.net/uk/images/restaurants/102215.gif" }} resizeMode={'contain'} />
+            <Logo source={{ uri: restaurant?.LogoUrl }} resizeMode={'contain'} />
             <Description>
                 <RestaurantInfo>
                     <Text>{restaurant?.Name}</Text>

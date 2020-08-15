@@ -6,7 +6,7 @@ import _ from 'lodash'
 
 import { PostCodeSearch } from '../components/PostCodeSearch'
 import RestaurantService from '../services/restaurant.service'
-import { RestaurantList } from '../components/RestaurantLIst'
+import { RestaurantList } from '../components/RestaurantList'
 import { SkipRestaurant } from '../api/skip_api'
 import Colors from '../constants/colors'
 import useDebounce from '../hooks/useDebounce'

@@ -9,10 +9,10 @@ const Container = styled.View`
     border-bottom-color: ${Colors.lightGrey};
     border-bottom-width: 1px;
     background-color: ${Colors.white};
-    box-shadow: 1px 1px 1px ${Colors.midGrey};
 `
 
 const PostCodeInput = styled.TextInput`
+    text-align: center;
     height: 40px;
     padding: 10px;
 `
@@ -26,8 +26,7 @@ export const PostCodeSearch: React.FC<IProps> = ({ value, onTextChange }) => {
     return (
         <Container>
             <PostCodeInput
-                selectTextOnFocus={false}
-                placeholder={'Postal code...'}
+                placeholder={'Enter postal code'}
                 onChangeText={onTextChange}
                 value={value}
             />
