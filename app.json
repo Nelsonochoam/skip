@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "skip-nelson-ochoa",
+    "name": "Skip",
     "slug": "skip-nelson-ochoa",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -17,7 +17,13 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.nelson.skip",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.nelson.skip",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
