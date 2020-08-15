@@ -33,7 +33,7 @@ export const RestaurantList: React.FC<IProps> = ({ restaurants }) => {
         <List
             data={restaurants}
             renderItem={renderRestaurant}
-            keyExtractor={(item: SkipRestaurant) => _.uniqueId('restaurant_')}
+            keyExtractor={(item) => item.Id}
         />
     )
 }

@@ -11,6 +11,7 @@ export interface SkipRestaurant {
     City: string
     Url: string
     LogoUrl: string
+    UniqueName: string
     CuisineTypes: Array<CuisineType>
     Address: {
         City: string,
@@ -32,7 +33,7 @@ export class SkipApi implements ISkipApi {
     private static readonly ENDPOINT = 'https://uk.api.just-eat.io'
 
     public restaurantsByPostCode(postcode: string): Promise<SkipRestaurant[]> {
-        const PATH = `${SkipApi.ENDPOINT}/restaurants/bypostcode/${postcode}`
-        return axios.get(PATH).then((response) => response.data.Restaurants)
+        const PATH = `${SkipApi.ENDPOINT}/restaurants/bypostcode/${postcode.toLocaleLowerCase()}`
+        return axios.get(PATH).then((response) => response.data?.Restaurants)
     }
 }

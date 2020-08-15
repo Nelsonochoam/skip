@@ -42,7 +42,7 @@ export const RestaurantsContainer = () => {
 
     const refereshRestaurants = (postalCode: string) => {
         setLoading(true)
-        RestaurantService.retrieveRestaurants(postCode)
+        RestaurantService.retrieveRestaurants(postalCode)
             .then((rests) => setResturants(rests))
             .finally(() => setLoading(false))
     }
@@ -62,7 +62,7 @@ export const RestaurantsContainer = () => {
     return (
         <StyledSafeArea>
             <Container>
-                <PostCodeSearch value={postCode} onTextChange={setPostCode} />
+                <PostCodeSearch value={postCode} onTextChange={(value) => setPostCode(value.toUpperCase())} />
                 {renderRestaurantList()}
             </Container>
         </StyledSafeArea>

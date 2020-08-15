@@ -5,10 +5,13 @@ import styled from 'styled-components/native'
 import Colors from '../constants/colors'
 import { RatingBadge } from './RatingBadge'
 import { RestaurantFoodTypes } from './RestaurantFoodTypes'
+import { restaurants } from '../../tests/mocks/restaurants.mocks'
 
 
 const Card = styled.View`
-    border-radius: 10px;
+    border-radius: 5px;
+    margin: 15px 0;
+    background-color: ${Colors.white};
     box-shadow: 1px 1px 1px ${Colors.midGrey};
 `
 
@@ -29,7 +32,7 @@ const Ratings = styled.View`
 const Heading = styled.View`
     height: 150px;
     background-color: ${Colors.lightGrey};
-    width: 100$
+    width: 100%;
 `
 
 const Logo = styled(Image)`
