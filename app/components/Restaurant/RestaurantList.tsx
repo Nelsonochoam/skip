@@ -4,8 +4,8 @@ import { FlatList } from 'react-native'
 import _ from 'lodash'
 import styled from 'styled-components/native'
 
-import { Info } from './Info'
-import { SkipRestaurant } from '../api/skip_api'
+import { Info } from '../Info'
+import { SkipRestaurant } from '../../api/skip_api'
 import { Restaurant } from './Restaurant'
 
 

@@ -1,11 +1,12 @@
 import React from 'react'
-import { Image, Text } from 'react-native'
-import { SkipRestaurant } from '../api/skip_api'
+
 import styled from 'styled-components/native'
-import Colors from '../constants/colors'
+
+import Colors from '../../constants/colors'
+import { Image, Text } from 'react-native'
+import { SkipRestaurant } from '../../api/skip_api'
 import { RatingBadge } from './RatingBadge'
 import { RestaurantFoodTypes } from './RestaurantFoodTypes'
-import { restaurants } from '../../tests/mocks/restaurants.mocks'
 
 
 const Card = styled.View`

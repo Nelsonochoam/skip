@@ -4,7 +4,7 @@ import React from 'react'
 import _ from 'lodash'
 import styled from 'styled-components/native'
 
-import { CuisineType } from '../api/skip_api'
+import { CuisineType } from '../../api/skip_api'
 
 const Container = styled.View`
     margin: 15px 0;

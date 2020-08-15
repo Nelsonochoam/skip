@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/native'
 import { Text } from 'react-native'
-import Colors from '../constants/colors'
+import Colors from '../../constants/colors'
 
 const Badge = styled.View`
     padding: 2px 5px;
