@@ -1,7 +1,6 @@
-## Skip Challenge
+## Skip
 
-This project was built using expo react-native for simplicity. It displays allows you to search restaurants
-by using a postal code and it will display them showing a list with the name, foot categories and the rating.
+Search restaurants by postal code
 
 #### Demo
 
