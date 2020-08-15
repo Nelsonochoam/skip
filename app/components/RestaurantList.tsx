@@ -1,8 +1,18 @@
 import React from 'react'
+import { FlatList } from 'react-native'
+
 import _ from 'lodash'
+import styled from 'styled-components/native'
+
 import { Info } from './Info'
 import { SkipRestaurant } from '../api/skip_api'
-import { FlatList, Text } from 'react-native'
+import { Restaurant } from './Restaurant'
+
+
+const List = styled(FlatList)`
+    padding: 10px
+`
+
 
 interface IProps {
     restaurants: SkipRestaurant[]
@@ -11,8 +21,8 @@ interface IProps {
 export const RestaurantList: React.FC<IProps> = ({ restaurants }) => {
     const noRestaurants = _.isEmpty(restaurants)
 
-    const renderRestaurant = () => {
-
+    const renderRestaurant = ({ item }: { item: SkipRestaurant }) => {
+        return <Restaurant restaurant={item} />
     }
 
     if (noRestaurants) {
@@ -20,10 +30,10 @@ export const RestaurantList: React.FC<IProps> = ({ restaurants }) => {
     }
 
     return (
-        <FlatList
+        <List
             data={restaurants}
             renderItem={renderRestaurant}
-            keyExtractor={item => item['Id']}
+            keyExtractor={(item: SkipRestaurant) => _.uniqueId('restaurant_')}
         />
     )
 }

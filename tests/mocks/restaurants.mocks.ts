@@ -4,7 +4,7 @@ export const restaurants =
     [
         {
             "Id": 102215,
-            "Name": "TEST_DP_1",
+            "Name": "Beijing Spring",
             "UniqueName": "test_dp-london-london",
             "Address": {
                 "City": "London",
@@ -19,7 +19,7 @@ export const restaurants =
             "Longitude": 0,
             "Rating": {
                 "Count": 0,
-                "Average": 0,
+                "Average": 8.5,
                 "StarRating": 0
             },
             "RatingStars": 0,
