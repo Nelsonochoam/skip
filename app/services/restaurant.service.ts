@@ -10,5 +10,5 @@ class RestaurantService {
 }
 
 // @ts-ignore
-const api = process.env === 'TEST' ? new SkipApiMock() : new SkipApi()
+const api = process.env.NODE_ENV === 'test' ? new SkipApiMock() : new SkipApi()
 export default new RestaurantService(api)

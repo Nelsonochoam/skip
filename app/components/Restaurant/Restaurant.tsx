@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components/native'
 
 import Colors from '../../constants/colors'
+import TestIDs from '../../constants/test_ids'
 import { Image, Text } from 'react-native'
 import { SkipRestaurant } from '../../api/skip_api'
 import { RatingBadge } from './RatingBadge'
@@ -52,7 +53,7 @@ interface IProps {
 export const Restaurant: React.FC<IProps> = ({ restaurant }) => {
 
     return (
-        <Card>
+        <Card accessibilityLabel={TestIDs.restaurants.card}>
             <Heading />
             <Logo source={{ uri: restaurant?.LogoUrl }} resizeMode={'contain'} />
             <Description>

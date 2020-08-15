@@ -7,6 +7,7 @@ import styled from 'styled-components/native'
 import { Info } from '../Info'
 import { SkipRestaurant } from '../../api/skip_api'
 import { Restaurant } from './Restaurant'
+import TestIDs from '../../constants/test_ids'
 
 
 const List = styled(FlatList)`
@@ -26,14 +27,14 @@ export const RestaurantList: React.FC<IProps> = ({ restaurants }) => {
     }
 
     if (noRestaurants) {
-        return <Info info={'No restaurants'} />
+        return <Info testLabel={TestIDs.restaurants.notFound} info={'No restaurants'} />
     }
 
     return (
         <List
             data={restaurants}
             renderItem={renderRestaurant}
-            keyExtractor={(item) => item.Id}
+            keyExtractor={(item: SkipRestaurant) => item?.Id?.toString()}
         />
     )
 }

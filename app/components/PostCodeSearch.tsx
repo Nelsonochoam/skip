@@ -2,6 +2,7 @@ import React from 'react'
 
 import styled from 'styled-components/native'
 
+import TestIDS from '../constants/test_ids'
 import Colors from '../constants/colors'
 
 const Container = styled.View`
@@ -26,6 +27,7 @@ export const PostCodeSearch: React.FC<IProps> = ({ value, onTextChange }) => {
     return (
         <Container>
             <PostCodeInput
+                accessibilityLabel={TestIDS.postcode.input}
                 placeholder={'Enter postal code'}
                 onChangeText={onTextChange}
                 value={value}

@@ -11,11 +11,12 @@ const Container = styled.View`
 
 interface IProps {
     info: string
+    testLabel: string
 }
 
-export const Info: React.FC<IProps> = ({ info }) => {
+export const Info: React.FC<IProps> = ({ info, testLabel }) => {
     return (
-        <Container>
+        <Container accessibilityLabel={testLabel}>
             <Text>{info}</Text>
         </Container>
     )
