@@ -62,7 +62,7 @@ export const RestaurantsContainer = () => {
     return (
         <StyledSafeArea>
             <Container>
-                <PostCodeSearch value={postCode} onTextChange={(value) => setPostCode(value.toUpperCase())} />
+                <PostCodeSearch value={postCode} onTextChange={setPostCode} />
                 {renderRestaurantList()}
             </Container>
         </StyledSafeArea>
