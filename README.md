@@ -3,6 +3,10 @@
 This project was built using expo react-native for simplicity. It displays allows you to search restaurants
 by using a postal code and it will display them showing a list with the name, foot categories and the rating.
 
+#### Demo
+
+![alt text](https://github.com/Nelsonochoam/skip/blob/master/assets/demo.gif "Demo")
+
 ---
 
 ### Prequisites
