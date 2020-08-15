@@ -3,13 +3,16 @@
 This project was built using expo react-native for simplicity. It displays allows you to search restaurants
 by using a postal code and it will display them showing a list with the name, foot categories and the rating.
 
+---
+
 ### Prequisites
 
  * Have node and npm install
  * Run `bash ./scripts/install.sh`. It will install the expo-cli and the dependencies required by this project
 
+---
 
-### Quick Test
+### Checking The App Live
 
 Download expo from the app store on your device. Once it has dowloaded go to that link
 on a computer and open your camera and scan the QR code in the page and it will open
@@ -18,8 +21,9 @@ same page)
 
 * https://expo.io/@nelsonochoam/skip-nelson-ochoa
 
+---
 
-### Building the app
+### Building the App Locally
 
 
 ##### Running it in IOS simulator
@@ -40,6 +44,7 @@ load the app, just run from the root of this project
 
 `npm run start`
 
+---
 
  ### Running tests
 
