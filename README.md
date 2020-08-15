@@ -51,3 +51,10 @@ load the app, just run from the root of this project
  Make sure you have ran `npm install` first so you can run the tests
 
  * On the root of the project run `npm test`
+
+
+---
+
+### Contact Info:
+
+email: nelsonochoam@gmail.com
