@@ -30,8 +30,8 @@ same page)
 
 For convenienve I have already built the app for you, simply go to the links below, download it and drag and drop it on you simulator or emulator
 
-* For IOS: [Click here](https://drive.google.com/file/d/1cZpPp9kBDGyBWzb1hR2cxJQSCtyt1OO-/view?usp=sharing)
-* For Android [Click here](https://drive.google.com/file/d/169rdM1WN51g2RVtcSINjCCEAC9HGCy4p/view?usp=sharing)
+* For IOS: [Click here](https://drive.google.com/file/d/1LeuReQ65pxtxn8YD5MGInjQySPAtUt8q/view?usp=sharing)
+* For Android [Click here](https://drive.google.com/file/d/10VxvXwAhnRDEeOezJgaaRZFvI3Y-mn7P/view?usp=sharing)
 
 But if you really want to build it yourself you will need an expo account, just go to https://expo.io/
 create an account then:
