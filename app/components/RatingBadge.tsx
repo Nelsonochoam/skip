@@ -7,7 +7,6 @@ const Badge = styled.View`
     padding: 2px 5px;
     background-color: ${Colors.skipOrange};
     border-radius: 2px;
-    max-with: 20px;
     align-self: flex-end;
 `
 

@@ -1,12 +1,17 @@
 import axios from 'axios'
 
+export interface CuisineType {
+    Name: string;
+    SeoName: string
+}
+
 export interface SkipRestaurant {
     Id: string
     Name: string
     City: string
     Url: string
     LogoUrl: string
-    CuisineTypes: Array<{ Name: string, SeoName: string }>
+    CuisineTypes: Array<CuisineType>
     Address: {
         City: string,
         Latitude: number,

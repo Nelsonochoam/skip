@@ -6,9 +6,9 @@ import Colors from '../constants/colors'
 
 const Container = styled.View`
     padding-top: 30px;
-    border-bottom: ${Colors.lightGrey};
+    border-bottom-color: ${Colors.lightGrey};
     border-bottom-width: 1px;
-    background-coolor: ${Colors.white};
+    background-color: ${Colors.white};
     box-shadow: 1px 1px 1px ${Colors.midGrey};
 `
 
@@ -26,6 +26,7 @@ export const PostCodeSearch: React.FC<IProps> = ({ value, onTextChange }) => {
     return (
         <Container>
             <PostCodeInput
+                selectTextOnFocus={false}
                 placeholder={'Postal code...'}
                 onChangeText={onTextChange}
                 value={value}

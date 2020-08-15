@@ -114,7 +114,20 @@ export const restaurants =
                     "IsTopCuisine": false,
                     "Name": "English",
                     "SeoName": "english"
-                }
+                },
+                {
+                    "Id": 1,
+                    "IsTopCuisine": false,
+                    "Name": "Chinese",
+                    "SeoName": "chinese"
+                },
+                {
+                    "Id": 3,
+                    "IsTopCuisine": false,
+                    "Name": "TexMex",
+                    "SeoName": "texmex"
+                },
+
             ],
             "Cuisines": [
                 {

@@ -4,11 +4,12 @@ import { SkipRestaurant } from '../api/skip_api'
 import styled from 'styled-components/native'
 import Colors from '../constants/colors'
 import { RatingBadge } from './RatingBadge'
+import { RestaurantFoodTypes } from './RestaurantFoodTypes'
 
 
 const Card = styled.View`
     border-radius: 10px;
-    box-shadow: 5px 5px 5px ${Colors.lightGrey};
+    box-shadow: 1px 1px 1px ${Colors.midGrey};
 `
 
 const Description = styled.View`
@@ -45,16 +46,15 @@ interface IProps {
 }
 
 export const Restaurant: React.FC<IProps> = ({ restaurant }) => {
-    console.warn(restaurant)
 
     return (
         <Card>
             <Heading />
-
             <Logo source={{ uri: "http://d30v2pzvrfyzpo.cloudfront.net/uk/images/restaurants/102215.gif" }} resizeMode={'contain'} />
             <Description>
                 <RestaurantInfo>
                     <Text>{restaurant?.Name}</Text>
+                    <RestaurantFoodTypes cuisineTypes={restaurant?.CuisineTypes} />
                 </RestaurantInfo>
                 <Ratings>
                     <RatingBadge avgRating={restaurant.Rating?.Average} />
